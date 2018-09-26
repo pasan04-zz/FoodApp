@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/hopers" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    android:text="Hoppers"
+                    android:textColor="#000000"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_weight="0"
+                    android:text=" 60.00"
+                    android:textColor="#006400"
+                    android:id="@+id/hoppersPrice"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Served Hot | 144 Calories | 20g proteins"
+                android:textColor="#8B4513"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Hoppers in their simplest form are bowl-shaped pancakes made from fermented rice flour and coconut milk. Cooked in small round pans, they tend to come out crispy round the edges, thicker at the bottom."
+                android:textColor="	#696969"
+                android:textSize="13dp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/myButton1"
+                    android:layout_width="81dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#696969"
+                    android:gravity="left"
+                    android:text="Qty "></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="116dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="#FF0000"
+                    android:text="Add to Bag"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:paddingTop="20dp"
+                android:src="@drawable/kottu" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Kottu "
+                    android:textColor="#000000"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:text=" 900.00"
+                    android:textColor="#006400"
+                    android:id="@+id/kottuPrice"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Served Hot | 163 Calories | 4.7 g proteins"
+                android:textColor="#8B4513"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Kottu is a classic Sri Lankan food - flatbread (godamba roti) chopped together with veg and meat and cheese and whatever else you can imagine."
+                android:textColor="	#696969"
+                android:textSize="13dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/myButton2"
+                    android:layout_width="81dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#696969"
+                    android:gravity="left"
+                    android:text="Qty "></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="116dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="#FF0000"
+                    android:text="Add to Bag"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/noodels" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Noodles"
+                    android:textColor="#000000"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:text=" 400.00"
+                    android:textColor="#006400"
+                    android:id="@+id/noodleprice"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Served Hot | 163 Calories | 4.7 g proteins"
+                android:textColor="#8B4513"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Noodles are a staple food in many cultures. They are made from unleavened dough which is stretched, extruded, or rolled flat and cut into one of a variety of shapes"
+                android:textColor="	#696969"
+                android:textSize="13dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/myButton3"
+                    android:layout_width="81dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#696969"
+                    android:gravity="left"
+                    android:text="Qty "></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="116dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="#FF0000"
+                    android:text="Add to Bag"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/strhopers" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="String Hoppers"
+                    android:textColor="#000000"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text=" 700.00"
+                    android:textColor="#006400"
+                    android:id="@+id/stringhopperprice"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Served Hot | 144 Calories | 20g proteins"
+                android:textColor="#8B4513"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Idiyappam is a traditional South Indian food made using rice flour and steamed. It is also a staple food of SriLanka . Idiyappam is usually served with stew or any any spicy side dish"
+                android:textColor="	#696969"
+                android:textSize="13dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/myButton4"
+                    android:layout_width="81dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#696969"
+                    android:gravity="left"
+                    android:text="Qty "></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="116dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="#FF0000"
+                    android:text="Add to Bag"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

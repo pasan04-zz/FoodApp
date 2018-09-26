@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0"
+        android:text="Noodles"
+        android:textColor="#000000"
+        android:textSize="25dp"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Served Hot | 144 Calories | 20g proteins"
+        android:textColor="#8B4513"
+        android:textSize="15dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Noodles are a staple food in many cultures. They are made from unleavened dough which is stretched, extruded, or rolled flat and cut into one of a variety of shapes"
+        android:textColor="	#696969"
+        android:textSize="13dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:text="Ingredients  Rice | Indian spices | Vegetables
+         Meat | Egg | Yoghurt"
+        android:textColor="#8B4513"
+        android:textSize="15dp"></TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="142dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/noodels" />
+
+    <TableRow
+        android:id="@+id/hr1"
+        android:layout_width="325dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="312dp"
+        android:background="#444"></TableRow>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add to Bag"
+            android:id="@+id/textView2" />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:layout_marginLeft="150dp"
+            android:checked="false"
+            android:textOff="OFF"
+            android:textOn="ON"/>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/hr2"
+        android:layout_width="325dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="342dp"
+        android:background="#444"></TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="350dp"
+            android:textSize="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sales Tax "
+            android:id="@+id/textView3" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="350dp"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RS." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="350dp"
+            android:textSize="18dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/textresult1" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="380dp"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quantity : "
+        android:id="@+id/textView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="380dp"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  " />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="380dp"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textresult2" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="410dp"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total  "
+        android:id="@+id/textView5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="410dp"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RS." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textresult3" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:background="#FF0000"
+        android:text="Pickup Time"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

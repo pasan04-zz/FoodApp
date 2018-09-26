@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fine Diner</string>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@color/titlebackgroundcolor</item>
+    </style>
+
+</resources>

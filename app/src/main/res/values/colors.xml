@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#df0404</color>
+    <color name="colorPrimaryDark">#e10004</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name ="titlebackgroundcolor">#FF0000</color>
+    <color name ="cardview_light_background">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+</resources>
