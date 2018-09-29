@@ -10,41 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashScreen"
+            android:name=".sqlite.database.Controller.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".sqlite.database.Controller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FriedRice" />
-        <activity android:name=".biriyani" />
-        <activity android:name=".rice" />
-        <activity android:name=".hoppers" />
-        <activity android:name=".kottu" />
-        <activity android:name=".noodles" />
-        <activity android:name=".stringhoppers" />
-        <activity android:name=".breakfast" />
-        <activity android:name=".dinner" />
-        <activity android:name=".roti" />
-        <activity android:name=".lunch" />
-        <activity android:name=".pittu" />
-        <activity android:name=".payment" />
-        <activity android:name=".lunch_time" />
-        <activity android:name=".breakfast_time" />
-        <activity android:name=".dinner_time" />
-        <activity android:name=".paymentOption" />
-        <activity android:name=".finalactivity"></activity>
+        <activity android:name=".sqlite.database.Controller.FriedRice" />
+        <activity android:name=".sqlite.database.Controller.biriyani" />
+        <activity android:name=".sqlite.database.Controller.rice" />
+        <activity android:name=".sqlite.database.Controller.hoppers" />
+        <activity android:name=".sqlite.database.Controller.kottu" />
+        <activity android:name=".sqlite.database.Controller.noodles" />
+        <activity android:name=".sqlite.database.Controller.stringhoppers" />
+        <activity android:name=".sqlite.database.Controller.breakfast" />
+        <activity android:name=".sqlite.database.Controller.dinner" />
+        <activity android:name=".sqlite.database.Controller.roti" />
+        <activity android:name=".sqlite.database.Controller.lunch" />
+        <activity android:name=".sqlite.database.Controller.pittu" />
+        <activity android:name=".sqlite.database.Controller.payment" />
+        <activity android:name=".sqlite.database.Controller.lunch_time" />
+        <activity android:name=".sqlite.database.Controller.breakfast_time" />
+        <activity android:name=".sqlite.database.Controller.dinner_time" />
+        <activity android:name=".sqlite.database.Controller.paymentOption" />
+        <activity android:name=".sqlite.database.Controller.finalactivity" />
+        <activity android:name=".sqlite.database.Controller.OrderDetails"></activity>
     </application>
 
 </manifest>

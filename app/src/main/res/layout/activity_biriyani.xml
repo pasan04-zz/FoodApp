@@ -84,6 +84,7 @@
             android:textOn="ON"/>
     </LinearLayout>
 
+
     <TableRow
         android:id="@+id/hr2"
         android:layout_width="325dp"
@@ -174,48 +175,40 @@
     </LinearLayout>
 
 
-
-
-
-
-
-
-
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
         <TextView
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="410dp"
-            android:textSize="18dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Total  "
-            android:id="@+id/textView5" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="82dp"
             android:layout_marginTop="410dp"
-            android:textSize="18dp"
+            android:text="RS."
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="RS." />
+            android:textSize="18dp" />
 
         <TextView
+            android:id="@+id/textresult3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="410dp"
-            android:textSize="18dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text=""
-            android:id="@+id/textresult3" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18dp" />
 
 
     </LinearLayout>
@@ -223,21 +216,17 @@
 
 
 
-
-
-
-
     <Button
         android:id="@+id/button1"
-
         android:layout_width="280dp"
         android:layout_height="40dp"
         android:layout_marginTop="450dp"
         android:layout_marginLeft="40dp"
         android:gravity="center"
         android:background="#FF0000"
-        android:text="Pickup Time"
-        android:textColor="#FFFFFF" />
+        android:text="ADD TO CART"
+        android:textColor="@color/colorWhite" />
+
 
 
 </RelativeLayout>

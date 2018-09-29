@@ -1,4 +1,4 @@
-package com.google.hangout.myapp;
+package com.google.hangout.myapp.sqlite.database.Controller;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+import com.google.hangout.myapp.R;
 
 
 //Lunch

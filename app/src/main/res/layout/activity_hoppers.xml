@@ -226,7 +226,7 @@
         android:layout_marginLeft="40dp"
         android:gravity="center"
         android:background="#FF0000"
-        android:text="Pickup Time"
+        android:text="ADD TO CART"
         android:textColor="#FFFFFF" />
 
 

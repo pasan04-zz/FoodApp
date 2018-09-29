@@ -1,4 +1,4 @@
-package com.google.hangout.myapp;
+package com.google.hangout.myapp.sqlite.database.Controller;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,22 +10,26 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class kottu extends AppCompatActivity {
+import com.google.hangout.myapp.R;
+
+public class roti extends AppCompatActivity {
+    public static final String type1 ="finediner";
+    public static final String quantity1 ="findiner12";
+    public static final String price1 ="finediner123";
+
+
     public Button but1;
 
     public void init(){
 
-        but1 = (Button)findViewById(R.id.Button1);
-
-
+        but1 = (Button)findViewById(R.id.button1);
         but1.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view){
 
-                Intent t123= new Intent(kottu.this,dinner_time.class);
+                Intent t123= new Intent(roti.this,breakfast_time.class);
                 startActivity(t123);
-
 
             }
 
@@ -33,27 +37,29 @@ public class kottu extends AppCompatActivity {
         });
 
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kottu);
+        setContentView(R.layout.activity_roti);
         Intent receiveIntent = this.getIntent();
         String sTax = receiveIntent.getStringExtra(breakfast.Extra_Message);
         TextView textView1 = findViewById(R.id.textresult1);
         textView1.setText(sTax);
 
 
-        String quantity = receiveIntent.getStringExtra(breakfast.quantity);
+        final String quantity12 = receiveIntent.getStringExtra(breakfast.quantity);
         TextView textView2 = findViewById(R.id.textresult2);
-        textView2.setText(quantity);
+        textView2.setText(quantity12);
         String price = receiveIntent.getStringExtra(breakfast.pricePerItem);
         double price12 = Double.parseDouble(price);
         double salesTax = Double.parseDouble(sTax);
-        double qty12 = Double.parseDouble(quantity);
+        double qty12 = Double.parseDouble(quantity12);
 
         double total = price12*qty12 +salesTax;
 
-        String total12 =String.valueOf(total);
+        final String total12 =String.valueOf(total);
         TextView textresult = findViewById(R.id.textresult3);
         textresult.setText(total12);
 
@@ -63,7 +69,7 @@ public class kottu extends AppCompatActivity {
                 new CompoundButton.OnCheckedChangeListener() {
                     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                         if (isChecked) {
-                            Toast.makeText(kottu.this,"Switch On", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(roti.this,"Switch On", Toast.LENGTH_SHORT).show();
                             //init();
                             but1 = (Button)findViewById(R.id.button1);
                             but1.setOnClickListener(new View.OnClickListener(){
@@ -71,7 +77,10 @@ public class kottu extends AppCompatActivity {
                                 @Override
                                 public void onClick(View view){
 
-                                    Intent t123= new Intent(kottu.this,breakfast_time.class);
+                                    Intent t123= new Intent(roti.this,OrderDetails.class);
+                                    t123.putExtra(quantity1,quantity12);
+                                    t123.putExtra(type1,"Roti");
+                                    t123.putExtra(price1,total12);
                                     startActivity(t123);
 
                                 }
@@ -84,7 +93,7 @@ public class kottu extends AppCompatActivity {
 
                                 @Override
                                 public void onClick(View view){
-                                    Toast.makeText(kottu.this,"Please add to bag", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(roti.this,"Please add to bag", Toast.LENGTH_SHORT).show();
 
                                 }
                             });
@@ -92,5 +101,8 @@ public class kottu extends AppCompatActivity {
                         }
                     }
                 });
+
+
+
     }
 }

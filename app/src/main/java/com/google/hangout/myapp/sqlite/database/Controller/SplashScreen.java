@@ -1,9 +1,11 @@
-package com.google.hangout.myapp;
+package com.google.hangout.myapp.sqlite.database.Controller;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.google.hangout.myapp.R;
 
 public class SplashScreen extends Activity {
 

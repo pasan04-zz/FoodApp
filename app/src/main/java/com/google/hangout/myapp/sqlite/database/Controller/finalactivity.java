@@ -1,7 +1,9 @@
-package com.google.hangout.myapp;
+package com.google.hangout.myapp.sqlite.database.Controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.google.hangout.myapp.R;
 
 public class finalactivity extends AppCompatActivity {
 

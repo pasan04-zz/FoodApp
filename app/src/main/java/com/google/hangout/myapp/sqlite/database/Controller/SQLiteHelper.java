@@ -1,4 +1,4 @@
-package com.google.hangout.myapp;
+package com.google.hangout.myapp.sqlite.database.Controller;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

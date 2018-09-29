@@ -1,35 +1,35 @@
-package com.google.hangout.myapp;
+package com.google.hangout.myapp.sqlite.database.Controller;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
+import com.google.hangout.myapp.R;
 
-//Lunch
-
-public class MainActivity extends AppCompatActivity {
+public class lunch_time extends AppCompatActivity {
 
     public Button but1;
     public Button but2;
     public Button but3;
+    public Button but4;
 
     public void init(){
 
-        but1 = (Button)findViewById(R.id.but1);
-        but2 = (Button)findViewById(R.id.but2);
-        but3 = (Button)findViewById(R.id.but3);
+        but1 = (Button)findViewById(R.id.button1);
+        but2 = (Button)findViewById(R.id.button2);
+        but3 = (Button)findViewById(R.id.button3);
+        but4 = (Button)findViewById(R.id.button4);
 
         but1.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view){
 
-                Intent b1 = new Intent(MainActivity.this,breakfast.class);
+                Intent b1 = new Intent(lunch_time.this,paymentOption.class);
                 startActivity(b1);
-                Toast.makeText(MainActivity.this,"You have chosen Breakfast!",Toast.LENGTH_SHORT).show();
+
 
 
             }
@@ -41,9 +41,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
 
-                Intent b2 = new Intent(MainActivity.this,lunch.class);
+                Intent b2 = new Intent(lunch_time.this,paymentOption.class);
                 startActivity(b2);
-                Toast.makeText(MainActivity.this,"You have chosen Lunch!",Toast.LENGTH_SHORT).show();
 
 
             }
@@ -55,9 +54,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
 
-                Intent b3 = new Intent(MainActivity.this,dinner.class);
+                Intent b3 = new Intent(lunch_time.this,paymentOption.class);
                 startActivity(b3);
-                Toast.makeText(MainActivity.this,"You have chosen Dinner!",Toast.LENGTH_SHORT).show();
+
+
+
+            }
+
+
+        });
+        but4.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+
+                Intent b4 = new Intent(lunch_time.this,paymentOption.class);
+                startActivity(b4);
 
 
             }
@@ -70,8 +82,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lunch_time);
         init();
+
+
+
 
     }
 }

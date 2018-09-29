@@ -1,4 +1,4 @@
-package com.google.hangout.myapp;
+package com.google.hangout.myapp.sqlite.database.Controller;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class payment extends AppCompatActivity {
+import com.google.hangout.myapp.R;
+
+public class paymentOption extends AppCompatActivity {
+
     public Button but1;
+
 
     public void init(){
 
@@ -19,8 +23,8 @@ public class payment extends AppCompatActivity {
             @Override
             public void onClick(View view){
 
-                Intent t123= new Intent(payment.this,finalactivity.class);
-                startActivity(t123);
+                Intent b1 = new Intent(paymentOption.this,payment.class);
+                startActivity(b1);
 
 
             }
@@ -28,15 +32,14 @@ public class payment extends AppCompatActivity {
 
         });
 
+
+
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.activity_payment_option);
         init();
     }
 }
-
-
-
-
